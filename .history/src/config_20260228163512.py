@@ -412,7 +412,7 @@ class Config:
             openai_base_url=os.getenv('OPENAI_BASE_URL') or (
                 'https://aihubmix.com/v1' if os.getenv('AIHUBMIX_KEY') else None
             ),  # noqa: E501
-            openai_model=os.getenv('OPENAI_MODEL', 'gpt-4o-free') or 'gpt-4o-free',
+            openai_model=os.getenv('OPENAI_MODEL', 'gpt-4o-mini') or 'gpt-4o-mini',
             openai_vision_model=os.getenv('OPENAI_VISION_MODEL') or None,
             openai_temperature=float(os.getenv('OPENAI_TEMPERATURE', '0.7')),
             bocha_api_keys=bocha_api_keys,
